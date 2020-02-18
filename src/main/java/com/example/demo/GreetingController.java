@@ -13,21 +13,22 @@ import com.example.demo.modules.user.service.UserService;
 
 @Controller
 public class GreetingController {
-	
+
 	@Autowired
 	private UserService userServiceImpl;
-	
+
 	@GetMapping("/greeting")
-	public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
+	public String greeting(@RequestParam(name = "name", required = false, defaultValue = "World") String name,
+			Model model) {
 		model.addAttribute("name", name);
 		return "greeting";
 	}
-	
+
 	@GetMapping("/greeting2")
 	public String greeting2(Model model) {
-		
-		 Optional<User> user =  userServiceImpl.findById(1);
-		model.addAttribute("name", user.get().getUsername());
+		Optional<User> user = userServiceImpl.findById(1);
+		String name = user.isPresent() ? user.get().getUsername() : "empty";
+		model.addAttribute("name", name);
 		return "greeting";
 	}
 
