@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class AuthController {
 
-	@GetMapping("/login2")
+	@GetMapping("/login3542")
 	public String login() {
 		return "login";
 	}
 	
-	@PostMapping("/login2")
+	@PostMapping("/login2345")
 	public void submitLogin(@ModelAttribute UserLogin userLogin) {
 		
 	}
