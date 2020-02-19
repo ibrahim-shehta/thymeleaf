@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-layout-decorate="~{fragments/layout}">
+<head>
+    <title>register</title>
+</head>
+
+<body>
+		<div data-layout-fragment="content">
+		
+				<div class="register-container">
+		<h1 class="register-header">Registration</h1>
+
+		<form action="/">
+			<hr>
+			
+			<label class="register-icon" for="email"> <i class="icon-envelope "> </i> </label> 
+			<input type="text" name="email" id="email" placeholder="Email" required />
+			
+			<label class="register-icon" for="name"> <i class="icon-user"> </i> </label>
+			<input type="text" name="name" id="name" placeholder="Name" required />
+			
+			<label class="register-icon" for="password"> <i class="icon-shield"> </i> </label> 
+			<input type="password" name="password" id="password" placeholder="Password" required />
+			
+			<div class="gender">
+				<input type="radio" value="None" id="male" name="gender" checked />
+				<label for="male" class="radio">Male</label>
+				 
+				<input type="radio" value="None" id="female" name="gender" /> 
+				<label for="female" class="radio">Female</label>
+			</div>
+			<div class="button-register">
+				<a href="#">Register</a>
+			</div>
+			
+			
+		</form>
+	</div>
+				
+		</div>
+</body>
+</html>

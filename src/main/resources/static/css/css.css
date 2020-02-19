@@ -1,3 +1,250 @@
-body {
-	background-color: #ddd
+
+/*
+=======================================
+===============Start Of Login==========
+=======================================
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
 }
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #28d;
+}
+
+.login-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+
+/*
+=======================================
+===============End Of Login============
+=======================================
+
+*/
+
+/*
+=======================================
+===============Start Of SignUP=========
+=======================================
+
+*/
+
+
+
+.register-header {
+  font-size: 32px;
+  color: #4c4c4c;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.register-container {
+  margin: 20px auto;
+  width: 315px; 
+  height: 464px;  
+  border: solid 1px #cbc9c9;
+}
+
+.register-container input[type=radio] {
+  visibility: hidden;
+}
+
+
+
+.register-container label.radio {
+  cursor: pointer;
+  text-indent: 35px;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.register-container label.radio:before {
+  background: #3a57af;
+  content:'';
+  position: absolute;
+  top:2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.register-container label.radio:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 0.5em;
+	height: 0.25em;
+	background: transparent;
+	top: 7.5px;
+	left: 4.5px;
+	border: 3px solid #ffffff;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.register-container input[type=radio]:checked + label:after {
+	opacity: 1;
+}
+
+.register-container input[type=text],.register-container input[type=password]{
+  width: 250px; 
+  height: 39px; 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 1px #cbc9c9;
+  margin-left: -5px;
+  margin-top: 13px; 
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+
+
+.register-container .register-icon {
+  width: 40px;
+  background-color: #3a57af;
+  padding: 8px 0px 8px 15px;
+  margin-left: 15px;
+  color: white;
+}
+
+
+
+.register-container .button-register {
+    text-align: center;
+}
+
+.register-container .button-register a {
+	background-color: #3a57af;
+    width: 80%;
+    display: inline-block;
+    padding: 8px 0;
+    border-radius: 3px;
+    color: #FFF;
+}
+
+.register-container .button-register a:hover{
+	color: #FFF;	
+}
+
+
+
+/*
+=======================================
+===============End Of SignUP===========
+=======================================
+
+*/
+
+
+/*
+=======================================
+===============Start Of Footer=========
+=======================================
+
+*/
+
+.footer-style {
+	background-color: #333;
+	color: #FFF;
+	height: 250px;
+	line-height: 250px;
+	margin-top: 60px;
+}
+
+.footer-style a {
+	color: #FFF;
+}
+/*
+=======================================
+===============End Of Footer===========
+=======================================
+
+*/
